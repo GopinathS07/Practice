@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Tasks</title>
+</head>
+<body>
+    <input type="text" id="inputBox" onkeyup="update()">
+    <h1 id="result1"></h1>
+    <hr>
+    <hr>
+    <button onclick="add()">Add Hello</button>
+    <h1 class="add1" onclick="del(event)"></h1>
+    <br><hr>
+    <button onclick="color()" id="btn">Click me!</button>
+    <br><hr>
+    <h1 id="result2"></h1>
+    <button onclick="show(event)">Gopi</button>
+    <button onclick="show(event)">Love</button>
+    <button onclick="show(event)">Janani</button>
+    <hr><br>
+
+    <h1 onclick="del(event)">One</h1>
+    <h1 onclick="del(event)">Two</h1>
+    <h1 onclick="del(event)">Three</h1>
+    <h1 onclick="del(event)">Four</h1>
+    <h1 onclick="del(event)">Five</h1>
+    <h1 onclick="del(event)">Six</h1>
+</body>
+<script>
+    var box=document.querySelector("#inputBox")
+    var result1=document.querySelector("#result1")
+    var add1=document.querySelector(".add1")
+    var btn=document.getElementById("btn")
+    var result2=document.getElementById("result2")
+    function update(){
+        result1.textContent=box.value
+    }
+    function add(){
+        var view=document.createElement("h1")
+        view.textContent=("Hello")
+        add1.append(view)
+    }
+    function color(){
+        btn.style.backgroundColor="red"
+    }
+    function show(){
+        result2.textContent=event.target.textContent
+    }
+    function del(){
+        event.target.remove()
+    }
+</script>
+</html>

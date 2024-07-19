@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color:#fd6569;
+    padding: 10px;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.book-container h4{
+    color: #fd6569;
+}
+.book-container button{
+    background-color: #fd6569;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+.add-btn{
+    background-color: #fd6569;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    border: none;
+    font-size: 35px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.popup-container{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    z-index: 1; display: inline-block;
+    display: none;
+}
+.popup-layer{
+    background-color: #fd6569;
+    width: 50%; padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%; left: 20%;
+    z-index: 2;
+    display: none;
+}
+.popup-layer input, .popup-layer textarea{
+    background: transparent;
+    border: none;
+    margin: 5px; padding: 5px;
+    font-size: 20px; width: 100%;
+    border-bottom: solid black 2px;
+}
+.popup-layer button{
+        background-color: black;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 20px; margin-left: 10px;
+}
